@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.primeiro.controlerfinceiro">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/s"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Editar.EditarContas"></activity>
+        <activity android:name=".Consultar.LinhaSaldo" />
+        <activity android:name=".Consultar.ConsultaSaldo" />
+        <activity android:name=".Receita.ReceitaMensal" />
+        <activity android:name=".Consultar.Linhas" />
+        <activity android:name=".Cadastro.CadastroSaldo" />
+        <activity android:name=".Consultar.ConsultaContas" />
+        <activity android:name=".Cadastro.CadastroContas" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

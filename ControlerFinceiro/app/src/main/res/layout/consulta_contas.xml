@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/controle"
+    tools:context=".Consultar.ConsultaContas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="Voltar"
+            android:textColor="#03122F"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnReceita"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/buttonVoltar"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_toStartOf="@+id/buttonVoltar"
+            android:layout_toLeftOf="@+id/buttonVoltar"
+            android:background="@android:color/transparent"
+            android:text="RECEITA"
+            android:textColor="#03122F"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
